@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="assets\jquery.min.js"></script>
+        <script src="assets\bootstrap-4.6.0-dist\js\bootstrap.min.js"></script>
+        <link rel="stylesheet" href="assets\bootstrap-4.6.0-dist\css\bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets\style.css">
+        <link rel="stylesheet" href="assets\port.css">
+        <link rel="stylesheet" href="assets\fontawesome\css\all.min.css">
+        <link rel="stylesheet" href="assets\fontawesome\css\fontawesome.min.css">
+        <link rel="stylesheet" href="assets\apexchart\apexcharts.css">
+        <script src="assets\apexchart\apexcharts.min.js"></script>
+        <script src="assets\tools.js"></script>
+        <title>Task Panel</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg flex-column">
+            <a class="navbar-brand" href="#"><img class="brandLogo" src="assets\images\noxlogo.svg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto flex-column">
+                <li class="nav-item">
+                    <i class="fas fa-desktop mr-1"></i>
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-list mr-1"></i>
+                    <a class="nav-link" href="#">Tasks</a>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-store mr-1"></i>
+                    <a class="nav-link" href="#">Module</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-user-alt mr-1"></i>
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-mask mr-1"></i>
+                    <a class="nav-link" href="#">Proxy</a>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-cog mr-1"></i>
+                    <a class="nav-link" href="#">Setting</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+        <main>
+            <div class="sectionTitle">
+                <h5>Task Panel</h5>
+                <div class="profileInfo">
+                    <div class="userInfo">
+                        <h6>FoxyDraft</h6>
+                        <p>Renewal</p>
+                    </div>
+                    <div class="pfp">
+                        <div>
+                            <i class="fas fa-times"></i>
+                        </div>
+                        <img src="assets\images\foxtasycraftwebhook.png" alt="pfp">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="sectionContent scrollbar-light-blue tasks">
+                <div class="taskTitle">
+                    <img class="iconRight" src="assets\images\e-commerce.svg" alt="cover">
+                    <div class="titleTab" id="tab1">
+                        <h4>E commerce Platforms</h4>
+                    </div>
+                </div>
+
+                <div class="taskContent" id="tabContent1">
+                    <div class="section mt-4">
+                        <div class="taskSection">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\shopify.png" alt="shopify">
+                                    </div>
+                                    <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Shopify</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" checked id="shopify">
+                                    <label class="custom-control-label" for="shopify"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="shopifycheck">
+                                    <label class="custom-control-label" for="shopifycheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\stripe.png" alt="logo">
+                                    </div>
+                                    <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Stripe</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" checked id="stripe">
+                                    <label class="custom-control-label" for="stripe"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="stripecheck">
+                                    <label class="custom-control-label" for="stripecheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection inactive ml-3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="taskTitle mt-5">
+                    <img class="iconLeft iconImage" src="assets\images\sneakers streetwears.svg" alt="cover">
+                    <div class="titleTab rightText" id="tab2">
+                        <h4>Shoes & Streetwear</h4>
+                    </div>
+                </div>
+
+                <div class="taskContent" id="tabContent2">
+                    <div class="section mt-4">
+                        <div class="taskSection">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\adidas.png" alt="shopify">
+                                    </div>
+                                    <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Adidas</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" checked id="adidas">
+                                    <label class="custom-control-label" for="adidas"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="adidascheck">
+                                    <label class="custom-control-label" for="adidascheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\crocs.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Crocs</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="crocs">
+                                    <label class="custom-control-label" for="crocs"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="crocscheck">
+                                    <label class="custom-control-label" for="crocscheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\champssports.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Champs Sports</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="cmp">
+                                    <label class="custom-control-label" for="cmp"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="cmpcheck">
+                                    <label class="custom-control-label" for="cmpcheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section mt-4">
+                        <div class="taskSection">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Dicks-Sporting-Goods.png" alt="cover">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Dicks Sporting Goods</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="dickssportinggoods">
+                                    <label class="custom-control-label" for="dickssportinggoods"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="dickssportinggoodscheck">
+                                    <label class="custom-control-label" for="dickssportinggoodscheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\East Bay.png" alt="logo">
+                                    </div>
+                                    <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>East Bay</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="eastbay">
+                                    <label class="custom-control-label" for="eastbay"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" checked id="eastbaycheck">
+                                    <label class="custom-control-label" for="eastbaycheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Finishline.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Finishline</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="fnl">
+                                    <label class="custom-control-label" for="fnl"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="fnlcheck">
+                                    <label class="custom-control-label" for="fnlcheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section mt-4"> 
+                        <div class="taskSection">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Footaction.png" alt="shopify">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Footaction</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="fta">
+                                    <label class="custom-control-label" for="fta"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="ftacheck">
+                                    <label class="custom-control-label" for="ftacheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Footlocker.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Footlocker</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="ftl">
+                                    <label class="custom-control-label" for="ftl"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="ftlcheck">
+                                    <label class="custom-control-label" for="ftlcheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Hibbet.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Hibbet</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="hibbet">
+                                    <label class="custom-control-label" for="hibbet"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="hibbetcheck">
+                                    <label class="custom-control-label" for="hibbetcheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section mt-4">
+                        <div class="taskSection">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\JDSports.png" alt="shopify">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>JD Sports</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="jd">
+                                    <label class="custom-control-label" for="jd"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="jdcheck">
+                                    <label class="custom-control-label" for="jdcheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\NewBalance.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>New Balance</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="nb">
+                                    <label class="custom-control-label" for="nb"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="nbcheck">
+                                    <label class="custom-control-label" for="nbcheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Nike.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Nike</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="nike">
+                                    <label class="custom-control-label" for="nike"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="nikecheck">
+                                    <label class="custom-control-label" for="nikecheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section mt-4">
+                        <div class="taskSection">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Off White.png" alt="shopify">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Off White</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="ow">
+                                    <label class="custom-control-label" for="ow"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="owcheck">
+                                    <label class="custom-control-label" for="owcheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\snkrs.svg" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Snkrs</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="snkrs">
+                                    <label class="custom-control-label" for="snkrs"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="snkrscheck">
+                                    <label class="custom-control-label" for="snkrscheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\supreme.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Supreme</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="supreme">
+                                    <label class="custom-control-label" for="supreme"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="supremecheck">
+                                    <label class="custom-control-label" for="supremecheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section mt-4">
+                        <div class="taskSection">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\snipes.png" alt="cover">
+                                    </div>
+                                    <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Snipes</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="snipes">
+                                    <label class="custom-control-label" for="snipes"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" checked id="snipescheck">
+                                    <label class="custom-control-label" for="snipescheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Yeezy Supply.png" alt="logo">
+                                    </div>
+                                    <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Yeezy Supply</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" checked id="ys">
+                                    <label class="custom-control-label" for="ys"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="yscheck">
+                                    <label class="custom-control-label" for="yscheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection inactive ml-3">
+            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="taskTitle mt-5">
+                    <img class="iconRight iconImage" src="assets\images\collectibles.svg" alt="cover">
+                    <div class="titleTab" id="tab3">
+                        <h4>Collectibles</h4>
+                    </div>
+                </div>
+
+                <div class="taskContent" id="tabContent3">
+                    <div class="section mt-4">
+                        <div class="taskSection">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Amazon.png" alt="shopify">
+                                    </div>
+                                    <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Amazon</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="amazon">
+                                    <label class="custom-control-label" for="amazon"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" checked id="amazoncheck">
+                                    <label class="custom-control-label" for="amazoncheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Best Buy.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Best Buy</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="bestbuy">
+                                    <label class="custom-control-label" for="bestbuy"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="bestbuycheck">
+                                    <label class="custom-control-label" for="bestbuycheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Disney.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Disney</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="disney">
+                                    <label class="custom-control-label" for="disney"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="disneycheck">
+                                    <label class="custom-control-label" for="disneycheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section mt-4">
+                        <div class="taskSection">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Ebay.png" alt="cover">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Ebay</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="ebay">
+                                    <label class="custom-control-label" for="ebay"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="ebaycheck">
+                                    <label class="custom-control-label" for="ebaycheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Evga.png" alt="logo">
+                                    </div>
+                                    <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div>
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Evga</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" checked id="evga">
+                                    <label class="custom-control-label" for="evga"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="evgacheck">
+                                    <label class="custom-control-label" for="evgacheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\GameStop.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>GameStop</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="gamestop">
+                                    <label class="custom-control-label" for="gamestop"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="gamestopcheck">
+                                    <label class="custom-control-label" for="gamestopcheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section mt-4">
+                        <div class="taskSection">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Lego.png" alt="shopify">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Lego</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="lego">
+                                    <label class="custom-control-label" for="lego"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="legocheck">
+                                    <label class="custom-control-label" for="legocheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Nvidia.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Nvidia</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="nvidia">
+                                    <label class="custom-control-label" for="nvidia"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="nvidiacheck">
+                                    <label class="custom-control-label" for="nvidiacheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Pokemon Center.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Pokemon Center</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="pokemon">
+                                    <label class="custom-control-label" for="pokemon"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="pokemoncheck">
+                                    <label class="custom-control-label" for="pokemoncheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section mt-4">
+                        <div class="taskSection">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Target.png" alt="shopify">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Target</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="target">
+                                    <label class="custom-control-label" for="target"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="targetcheck">
+                                    <label class="custom-control-label" for="targetcheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Walmart.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Walmart</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="walmart">
+                                    <label class="custom-control-label" for="walmart"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="walmartcheck">
+                                    <label class="custom-control-label" for="walmartcheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection inactive ml-3">
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="taskTitle mt-5">
+                    <img class="iconLeft" src="assets\images\dashboard.svg" alt="cover">
+                    <div class="titleTab rightText" id="tab4">
+                        <h4>Dashboards</h4>
+                    </div>
+                </div>
+
+                <div class="taskContent" id="tabContent4">
+                    <div class="section mt-4">
+                        <div class="taskSection">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Kleidi.png" alt="shopify">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Kleidi</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="kleidi">
+                                    <label class="custom-control-label" for="kleidi"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="kleidicheck">
+                                    <label class="custom-control-label" for="kleidicheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Meta Labs.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Meta Labs</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="meta">
+                                    <label class="custom-control-label" for="meta"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="metacheck">
+                                    <label class="custom-control-label" for="metacheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\shreyauth.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Shrey</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="shrey">
+                                    <label class="custom-control-label" for="shrey"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="shreycheck">
+                                    <label class="custom-control-label" for="shreycheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section mt-4">
+                        <div class="taskSection">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\TL.png" alt="shopify">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>TL</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="tl">
+                                    <label class="custom-control-label" for="tl"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="tlcheck">
+                                    <label class="custom-control-label" for="tlcheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Velo.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Velo</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="velo">
+                                    <label class="custom-control-label" for="velo"><p>Autofill</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="velocheck">
+                                    <label class="custom-control-label" for="velocheck"><p>Auto Checkout</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection inactive ml-3">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="taskTitle mt-5">
+                    <img class="iconRight" src="assets\images\universal.svg" alt="cover">
+                    <div class="titleTab" id="tab5">
+                        <h4>Universal Features</h4>
+                    </div>
+                </div>
+
+                <div class="taskContent" id="tabContent5">
+                    <div class="section mt-4">
+                        <div class="taskSection">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\nox.png" alt="shopify">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>AIO Autofill</h6>
+                                    <div class="c-dropdown js-dropdown">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">Profile</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Profile1</li>    
+                                        </ul>
+                                    </div>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Click</li>   
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="aio">
+                                    <label class="custom-control-label" for="aio"><p>Start</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\nox.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Captcha Auto Click</h6>
+                                    <div class="placer">
+                                        <p>placeholder</p>
+                                    </div>
+                                    <div class="placer">
+                                        <p>placeholder</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="cap">
+                                    <label class="custom-control-label" for="cap"><p>Start</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\discord.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Discord Auth Clicker</h6>
+                                    <div class="placer">
+                                        <p>placeholder</p>
+                                    </div>
+                                    <div class="placer">
+                                        <p>placeholder</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="discord">
+                                    <label class="custom-control-label" for="discord"><p>Start</p></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section mt-4">
+                        <div class="taskSection">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\nox.png" alt="shopify">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Link Maker</h6>
+                                    <form action="">
+                                        <input type="text" placeholder="Password" class="form-control">
+                                    </form>
+                                    <div class="c-dropdown js-dropdown mt-1">
+                                        <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                        <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                        <ul class="c-dropdown__list">
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Exact</li>
+                                            <li class="c-dropdown__item" data-dropdown-value="angular">Advanced</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="link">
+                                    <label class="custom-control-label" for="link"><p>Start</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\Paypal.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>Paypal Pay Now</h6>
+                                    <div class="placer">
+                                        <p>placeholder</p>
+                                    </div>
+                                    <div class="placer">
+                                        <p>placeholder</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="paypal">
+                                    <label class="custom-control-label" for="paypal"><p>Start</p></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="taskSection ml-3">
+                            <div class="type">
+                                <div class="siteCover">
+                                    <div class="imageCover">
+                                        <img src="assets\images\pastepin.png" alt="logo">
+                                    </div>
+                                    <!-- <div class="status">
+                                        <div></div>
+                                        <p>Active</p>
+                                    </div> -->
+                                    
+                                </div>
+                                <div class="modes">
+                                    <h6>PasteBin Parser</h6>
+                                    <div class="placer">
+                                        <p>placeholder</p>
+                                    </div>
+                                    <div class="placer">
+                                        <p>placeholder</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="pastebin">
+                                    <label class="custom-control-label" for="pastebin"><p>Start</p></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </body>
+
+</html>

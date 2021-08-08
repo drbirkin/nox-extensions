@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="assets\jquery.min.js"></script>
+        <script src="assets\bootstrap-4.6.0-dist\js\bootstrap.min.js"></script>
+        <link rel="stylesheet" href="assets\bootstrap-4.6.0-dist\css\bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets\style.css">
+        <link rel="stylesheet" href="assets\port.css">
+        <link rel="stylesheet" href="assets\fontawesome\css\all.min.css">
+        <link rel="stylesheet" href="assets\fontawesome\css\fontawesome.min.css">
+        <link rel="stylesheet" href="assets\apexchart\apexcharts.css">
+        <script src="assets\apexchart\apexcharts.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
+        <script src="assets\tools.js"></script>
+        <script src="assets\card.js"></script>
+        <title>Proxy Panel</title>
+    </head>
+
+<body>
+    <nav class="navbar navbar-expand-lg flex-column">
+        <a class="navbar-brand" href="#"><img class="brandLogo" src="assets\images\noxlogo.svg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto flex-column">
+            <li class="nav-item">
+                <i class="fas fa-desktop mr-1"></i>
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-list mr-1"></i>
+                <a class="nav-link" href="#">Tasks</a>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-store mr-1"></i>
+                <a class="nav-link" href="#">Module</a>
+            </li>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-user-alt mr-1"></i>
+                <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-mask mr-1"></i>
+                <a class="nav-link" href="#">Proxy</a>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-cog mr-1"></i>
+                <a class="nav-link" href="#">Setting</a>
+            </li>
+          </ul>
+
+          <a class="nav-link mt-auto">Version 1.0.1</a>
+        </div>
+    </nav>
+
+    <main>
+
+
+        <div class="sectionTitle">
+            <h5>Proxy Panel</h5>
+            <div class="profileInfo">
+                <div class="userInfo">
+                    <h6>FoxyDraft</h6>
+                    <p>Renewal</p>
+                </div>
+                <div class="pfp">
+                    <div>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <img src="assets\images\foxtasycraftwebhook.png" alt="pfp">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="sectionContent proxies">
+            <div class="proxySection">
+                <div class="proxySetting">
+                    <textarea class="scrollbar-light-blue tasks" name="ips" id="ips" cols="30" rows="10" placeholder="Paste Ips here"></textarea>
+                    <div class="btn-group">
+                        <button type="button" id="addips" class="btn btn-primary">Add Proxy</button>
+                    </div>
+                </div>
+                <div class="ipSection">
+                    <div class="ipTab lab">
+                        <div class="custom-control custom-switch inline">
+                            <input type="checkbox" class="custom-control-input" id="useProxy">
+                            <label class="custom-control-label" for="useProxy"><p>Enable Proxies</p></label>
+                        </div>
+                        <button type = "button" id = "removeips" class="btn btn-secondary">Remove All</button>
+                    </div>
+                    <div class="ipTabs scrollbar-light-blue tasks">
+                        <div class="ipTab">
+                            <p class="ip">de.proxyheaven-addasdadd.com:12345:dasdd:adsdasasuze5qed</p>
+                            <div class="actions">
+                                <i class="fas fa-check-square mr-2" id="check" ></i>
+                                <i class="fas fa-trash"></i>
+                            </div>
+                        </div>
+                        <div class="ipTab">
+                            <p class="ip">de.proxyheaven-addasdadd.com:12345:dasdd:adsdasasuze5qed</p>
+                            <div class="actions">
+                                <i class="fas fa-check-square mr-2" id="check"></i>
+                                <i class="fas fa-trash"></i>
+                            </div>
+                        </div>
+                        <div class="ipTab">
+                            <p class="ip">de.proxyheaven-addasdadd.com:12345:dasdd:adsdasasuze5qed</p>
+                            <div class="actions">
+                                <i class="fas fa-check-square mr-2" id="check"></i>
+                                <i class="fas fa-trash"></i>
+                            </div>
+                        </div>
+                        <div class="ipTab">
+                            <p class="ip">de.proxyheaven-addasdadd.com:12345:dasdd:adsdasasuze5qed</p>
+                            <div class="actions">
+                                <i class="fas fa-check-square mr-2" id="check"></i>
+                                <i class="fas fa-trash"></i>
+                            </div>
+                        </div>
+                        <div class="ipTab">
+                            <p class="ip">de.proxyheaven-addasdadd.com:12345:dasdd:adsdasasuze5qed</p>
+                            <div class="actions">
+                                <i class="fas fa-check-square mr-2" id="check"></i>
+                                <i class="fas fa-trash"></i>
+                            </div>
+                        </div>
+                        <div class="ipTab">
+                            <p class="ip">de.proxyheaven-addasdadd.com:12345:dasdd:adsdasasuze5qed</p>
+                            <div class="actions">
+                                <i class="fas fa-check-square mr-2" id="check"></i>
+                                <i class="fas fa-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+    </main>
+</body>
+</html>

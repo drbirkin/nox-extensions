@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="assets\jquery.min.js"></script>
+        <script src="assets\bootstrap-4.6.0-dist\js\bootstrap.min.js"></script>
+        <link rel="stylesheet" href="assets\bootstrap-4.6.0-dist\css\bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets\style.css">
+        <link rel="stylesheet" href="assets\port.css">
+        <link rel="stylesheet" href="assets\fontawesome\css\all.min.css">
+        <link rel="stylesheet" href="assets\fontawesome\css\fontawesome.min.css">
+        <link rel="stylesheet" href="assets\apexchart\apexcharts.css">
+        <script src="assets\apexchart\apexcharts.min.js"></script>
+        <script src="assets\tools.js"></script>
+        <title>Module Panel</title>
+    </head>
+<body>
+
+    <nav class="navbar navbar-expand-lg flex-column">
+        <a class="navbar-brand" href="#"><img class="brandLogo" src="assets\images\noxlogo.svg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto flex-column">
+            <li class="nav-item">
+                <i class="fas fa-desktop mr-1"></i>
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-list mr-1"></i>
+                <a class="nav-link" href="#">Tasks</a>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-store mr-1"></i>
+                <a class="nav-link" href="#">Module</a>
+            </li>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-user-alt mr-1"></i>
+                <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-mask mr-1"></i>
+                <a class="nav-link" href="#">Proxy</a>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-cog mr-1"></i>
+                <a class="nav-link" href="#">Setting</a>
+            </li>
+          </ul>
+
+          <a class="nav-link mt-auto">Version 1.0.1</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="sectionTitle">
+            <h5>Module Panel</h5>
+            <div class="profileInfo">
+                <div class="userInfo">
+                    <h6>FoxyDraft</h6>
+                    <p>Renewal</p>
+                </div>
+                <div class="pfp">
+                    <div>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <img src="assets\images\foxtasycraftwebhook.png" alt="pfp">
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="sectionContent scrollbar-light-blue tasks">
+            <div class="moduleSection">
+                <div class="moduleCover">
+                    <div class="settingCover">
+                        <img src="assets\images\shopifycover.png" alt="cover">
+                    </div>
+                    <div class="backCover"></div>
+                    <div class="monitorStatus deactive" id="monitorStatus1">
+                        <p class="found">Product<br>Found!</p>
+                        <p class="time">9:00:23.052Z</p>
+                    </div>
+                </div>
+                <div class="moduleSetting">
+                    <div>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="exampleInputNr1" placeholder="MIN Price">
+                                <input type="number" class="form-control ml-2" id="exampleInputNr2" placeholder="MAX Price">
+                            </div>
+                            <div class="form-group">
+                                <div class="c-dropdown js-dropdown">
+                                    <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                    <span class="c-button c-button--dropdown js-dropdown__current">size</span>
+                                    <ul class="c-dropdown__list size">
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">OneSize</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">3</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">3.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">4</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">4.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">5.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">6</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">6.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">7</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">7.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">8</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">8.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">9</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">9.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">10</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">10.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">11</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">11.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">12</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">12.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">13</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">13.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">14</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">14.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">15</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">16</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">17</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">18</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">19</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">XXS</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">XS</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">S</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">M</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">L</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">XL</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">2XL</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">3XL</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">4XL</li>    
+                                    </ul>
+                                </div>
+                                <div class="c-dropdown js-dropdown ml-2">
+                                    <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                    <span class="c-button c-button--dropdown js-dropdown__current">mode</span>
+                                    <ul class="c-dropdown__list">
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">Fast</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">Safe</li>   
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-group inputholder1">
+                            
+                                <input type="text" id="kw" class="form-control" placeholder="Keywords (+kw -kw..)">
+                                <div id="inputs"></div>
+                            
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="kw" class="form-control" id="coupon" placeholder="Coupon">
+                            </div>
+                            <div class="form-group">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="price">
+                                    <label class="custom-control-label" for="price"><p>Price Check</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="size">
+                                    <label class="custom-control-label" for="size"><p>Use InputSize</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="menu">
+                                    <label class="custom-control-label" for="menu"><p>Product Menu</p></label>
+                                </div>
+                            </div>
+
+                            <div class="form-group m-0">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="keywords">
+                                    <label class="custom-control-label" for="keywords"><p>Use Keywords</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="coupon">
+                                    <label class="custom-control-label" for="coupon"><p>Use Coupon</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="mode">
+                                    <label class="custom-control-label" for="mode"><p>Use Mode</p></label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <button type="button" id="start1" class="btn btn-primary">Start Monitor</button>
+                    <button type="button" id="stop1" class="btn btn-danger deactive">Stop Monitor</button>
+                </div>
+            </div>
+
+            <div class="moduleSection mt-5">
+                <div class="moduleCover">
+                    <div class="settingCover">
+                        <img src="assets\images\supremecover.png" alt="cover">
+                    </div>
+                    <div class="backCover sup"></div>
+                    <div class="monitorStatus deactive" id="monitorStatus2">
+                        <p class="active">Searching<br>Product</p>
+                        <p class="time">9:00:23.052Z</p>
+                    </div>
+                </div>
+                <div class="moduleSetting">
+                    <div>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="monitor" placeholder="Monitor Delay">
+                                <input type="number" class="form-control ml-2" id="quantity" placeholder="Quantity">
+                            </div>
+                            <div class="form-group">
+                                <div class="c-dropdown js-dropdown">
+                                    <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                    <span class="c-button c-button--dropdown js-dropdown__current">size</span>
+                                    <ul class="c-dropdown__list size">
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">OneSize</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">3</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">3.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">4</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">4.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">5.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">6</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">6.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">7</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">7.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">8</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">8.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">9</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">9.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">10</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">10.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">11</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">11.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">12</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">12.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">13</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">13.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">14</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">14.5</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">15</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">16</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">17</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">18</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">19</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">XXS</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">XS</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">S</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">M</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">L</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">XL</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">2XL</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">3XL</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">4XL</li>    
+                                    </ul>
+                                </div>
+                                <div class="c-dropdown js-dropdown ml-2">
+                                    <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                    <span class="c-button c-button--dropdown js-dropdown__current">category</span>
+                                    <ul class="c-dropdown__list">
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">New</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">Jackets</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">Shirts</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">Tops/Sweaters</li> 
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">Sweatshirts</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">T-shirts</li> 
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">Pants</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">Shorts</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">Hats</li> 
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">Bags</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">Accessories</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">Shoes</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">Skate</li>         
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-group inputholder2">
+                            
+                                <input type="text" id="kw2" class="form-control" placeholder="Keywords (+kw -kw..)">
+                                <div id="inputs2"></div>
+                            
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="color" class="form-control" placeholder="Color">
+                                <div class="c-dropdown js-dropdown ml-2">
+                                    <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                                    <span class="c-button c-button--dropdown js-dropdown__current">Checkout Delay</span>
+                                    <ul class="c-dropdown__list">
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">2500-3500</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">4000-4500</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">5000-5500</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">6000-6500</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">7000-7500</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">8000-8500</li>
+                                        <li class="c-dropdown__item" data-dropdown-value="angular">9000-9500</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="cart">
+                                    <label class="custom-control-label" for="cart"><p>Auto Cart</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="size2">
+                                    <label class="custom-control-label" for="size2"><p>Use InputSize</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="colorsearch">
+                                    <label class="custom-control-label" for="colorsearch"><p>Color Search</p></label>
+                                </div>
+                            </div>
+
+                            <div class="form-group m-0">
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="keywords3">
+                                    <label class="custom-control-label" for="keywords3"><p>Use Keywords</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline">
+                                    <input type="checkbox" class="custom-control-input" id="quantity1">
+                                    <label class="custom-control-label" for="quantity1"><p>Use Quantity</p></label>
+                                </div>
+                                <div class="custom-control custom-switch inline inactive">
+                                    
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <button type="button" id="start2" class="btn btn-primary">Start Monitor</button>
+                    <button type="button" id="stop2" class="btn btn-danger deactive">Stop Monitor</button>
+                </div>
+            </div>
+
+            <div class="moduleSection mt-5">
+                <div class="moduleCover stripeSetting">
+                    <div class="settingCover">
+                        <img src="assets\images\stripecover.png" alt="cover">
+                    </div>
+                    <div class="backCover stripe"></div>
+                </div>
+                <div class="moduleSetting">
+                    <div class="v2">
+                        <button type="button" class="btn btn-primary">Setup V2</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+</body>
+</html>

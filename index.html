@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets\jquery.min.js"></script>
+    <script src="assets\bootstrap-4.6.0-dist\js\bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets\bootstrap-4.6.0-dist\css\bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets\style.css">
+    <link rel="stylesheet" href="assets\port.css">
+    <link rel="stylesheet" href="assets\fontawesome\css\all.min.css">
+    <link rel="stylesheet" href="assets\fontawesome\css\fontawesome.min.css">
+    <link rel="stylesheet" href="assets\apexchart\apexcharts.css">
+    <script src="assets\apexchart\apexcharts.min.js"></script>
+    <script src="assets\tools.js"></script>
+    <title>Home Panel</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg flex-column">
+        <a class="navbar-brand" href="#"><img class="brandLogo" src="assets\images\noxlogo.svg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto flex-column">
+            <li class="nav-item">
+                <i class="fas fa-desktop mr-1"></i>
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-list mr-1"></i>
+                <a class="nav-link" href="#">Tasks</a>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-store mr-1"></i>
+                <a class="nav-link" href="#">Module</a>
+            </li>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-user-alt mr-1"></i>
+                <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-mask mr-1"></i>
+                <a class="nav-link" href="#">Proxy</a>
+            </li>
+            <li class="nav-item">
+                <i class="fas fa-cog mr-1"></i>
+                <a class="nav-link" href="#">Setting</a>
+            </li>
+          </ul>
+          
+          <a class="nav-link mt-auto">Version 1.0.1</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="sectionTitle">
+            <h5>Home</h5>
+            <div class="profileInfo">
+                <div class="userInfo">
+                    <h6>FoxyDraft</h6>
+                    <p>Renewal</p>
+                </div>
+                <div class="pfp">
+                    <div>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <img src="assets\images\foxtasycraftwebhook.png" alt="pfp">
+                </div>
+            </div>
+            
+        </div>
+        <div class="sectionContent">
+            <div class="welcome">
+                <h4>Welcome to Dashboard</h4>
+                <p class="mt-1">Hello FoxyDraft, our tools will help you cook!</p>
+                <img class="cover" src="assets\images\universe.svg" alt="cover">
+            </div>
+
+            <div class="stats mt-3">
+                <div class="messages scrollbar-light-blue mr-3 px-3 pt-4">
+                    <div class="tab mb-4">
+                        <div class="msgIcons">
+                            <i class="fas fa-bullhorn tools"></i>
+                        </div>
+                        <div class="tabInfo ml-3">
+                            <p>Important:</p>
+                            <div class="tabContent">
+                                <div></div>
+                                <p>Dashboard maintenance on 17th of October during 14:00-16:00 pm CEST.
+                                    <br>Sorry for the inconvenience! </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab mb-4">
+                        <div class="msgIcons">
+                            <i class="fas fa-dollar-sign dollar"></i>
+                        </div>
+                        <div class="tabInfo ml-3">
+                            <p>Checkout:</p>
+                            <div class="tabContent success">
+                                <div></div>
+                                <p>A purchase has been made on 29.03.2021 at 21:00 PM, congrats!
+                                    <br>Remember to check your Spamfolders for order number. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab mb-4">
+                        <div class="msgIcons">
+                            <i class="fas fa-bell bell"></i>
+                        </div>
+                        <div class="tabInfo ml-3">
+                            <p>Renewal:</p>
+                            <div class="tabContent renew">
+                                <div></div>
+                                <p>Your subscription will end soon!
+                                    <br>Click here to renew </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="notifications">
+                    <div class="spendCounter">
+                        <img class="spendIcon" src="assets\images\spend Icon.svg" alt="spend">
+                        <div class="spendAmount">
+                            <p>Total Spent:</p>
+                            <h4>USD 1.055</h4>
+                        </div>
+                    </div>
+                    <div class="spend mt-3" id="spark1"></div>
+                </div>
+            </div>
+
+            <div class="counters mt-3">
+                <div class="counter mr-3">
+                    <div class="section task">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="amount ml-3">
+                        <h4>50 <span>active</span></h4>
+                        <p>Tasks created</p>
+                    </div>
+                </div>
+                <div class="counter mr-3">
+                    <div class="section user">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div class="amount ml-3">
+                        <h4>16 <span>active</span></h4>
+                        <p>Profiles created</p>
+                    </div>
+                </div>
+                <div class="counter mr-3">
+                    <div class="section checkout">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="amount ml-3">
+                        <h4>450 <span>tasks</span></h4>
+                        <p>Success logged</p>
+                    </div>
+                </div>
+                <div class="counter">
+                    <div class="section decline">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <div class="amount ml-3">
+                        <h4>5 <span>tasks</span></h4>
+                        <p>Declines logged</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets\chart.js"></script>
+</body>
+</html>
